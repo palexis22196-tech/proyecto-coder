@@ -229,7 +229,7 @@ h3 {
     flex-direction: column;
     gap: 10px;
     width: 500px;
-    padding: 40px;
+    padding:40px;
     backdrop-filter: blur(15px);
     background-color: #3b8cff59;
     box-shadow: 20px 20px 80px #000000dd;
