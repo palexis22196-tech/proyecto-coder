@@ -4,94 +4,145 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fragile Express</title>
-    
-    <!--css-->
-    <link rel="stylesheet" href="./css/style.css">
-    
-    <!--fuente-->
+
+    <!-- Fuente -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header>
-        <div id="header">
-            <a  href="/index.html"><img id="logo" src="./img/logomain.webp" alt=""></a>
-            <h1>Fragile Express</h1>
-            <nav>
-                <ul>
-                <li><a href="./pages/nosotros.html">Nosotros</a></li>
-                <li><a href="#">|</a></li>
-                <li><a href="./pages/siguetuenvio.html">Sigue tu envío</a></li>
-                </ul>
+    <!-- Header -->
+    <header id="main-header">
+        <div class="header-container">
+            <a href="/index.html" class="logo-link">
+                <img id="logo" src="./img/logomain.webp" alt="Logo Fragile Express">
+            </a>
+            <h1 class="site-title">Fragile Express</h1>
+            <nav class="main-nav">
+                <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+                <a class="nav-link" href="./pages/siguetuenvio.html">Sigue tu envío</a>
             </nav>
         </div>
     </header>
-    <!--cuerpo principal-->
+
+    <!-- Main Content -->
     <main>
+        <!-- Sección principal -->
         <section id="cuerpo">
             <div class="textocuerpo">
-            <h2>Enviamos y entregamos con amor</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus tempora voluptatem pariatur odit aliquam unde alias sapiente? Officiis, iure! Sed beatae itaque quasi tenetur iusto saepe nam modi consequatur ipsam.</p>
+                <h2>Enviamos y entregamos con amor</h2>
             </div>
-
+            <div>
+                <p>
+                    Tu paquete seguro en las mejores manos
+                </p>
+            </div>
         </section>
-   <div class="titulocard">
-    <h2>Elige tu Tipo de entrega</h2>
-   </div> 
-   <div class="fondocard">
-        <div class="card-entrega">
-            <img class="imagen-card" src="./img/paqpeque.jpg" alt="">
-            <h3>Paquetes pequeños</h3>
-            <ul class="listacard">
-                <li>hasta 1kg</li>
-                <li>máximo de tamaño 1m</li>
-                <li>Ideal para electrónicos y otros </li>
-            </ul>
-            <button class="botoncard">Contratar</button>
-        </div>
-        <div class="card-entrega">
-            <img class="imagen-card" src="./img/paqgrande.jpg" alt="">
-            <h3>Paquetes Grandes</h3>
-            <ul class="listacard">
-                <li>hasta 50kg</li>
-                <li>máximo de tamaño 2m</li>
-                <li>Ideal para cargas de materia prima </li>
-            </ul>
-            <button class="botoncard">Contratar</button>
-        </div>
-   </div>
-   <div>
-    <h4>¡Contáctanos!</h4>
-    <form action="">
-        <label for="nombre">Nombre</label>
-        <input type="text" name="" id="nombre">
 
-        <label for="tel">Número</label>
-        <input type="number" name="" id="tel">
+        <!-- Cards de entrega -->
+        <div>
+            <div class="flex-entrega">
+                <div class="fondo-entrega" >
+                <img class="entregaico" src="/img/entrega.png" alt="">
+                </div>
+            <div>
+                <section id="entregas">
+                <div class="titulocard">
+                    <h2>Elige tu Tipo de entrega</h2>
+                </div>    
+            </div>
+            </div>
+            
+            <div class="bar">
+            </div>
+        </div> 
+            <div class="fondocard">
+                <!-- Card Bootstrap -->
+                <div class="card card-paquete" style="width: 18rem;">
+                    <img src="./img/paqpeque.jpg" class="card-img-top" alt="Paquete pequeño">
+                    <p class="head-text">Detalles</p>
+                    <div class="card-body">
+                        <div class="sub">
+                        <img class="box-icon" src="./img/box-icon.svg" alt="">
+                        <h5 class="card-title">
+                        Paquetes Pequeños</h5>    
+                        </div>
+                        <p class="card-text">Para tus entregas rápidas y de poco esfuerzo</p>
+                        <a href="#contacto" class="btn btn-primary btn-card">Contratar</a>
+                    </div>
+                </div>
 
-        <label for="correo">correo</label>
-        <input type="email" name="" id="mail">
+                <div class="card card-paquete" style="width: 18rem;">
+                    
+                    <img src="./img/pqdmed.jpg" class="card-img-top" alt="Paquete mediano">
+                    <p class="head-text">Detalles</p>
+                    <div class="card-body">
+                        <div class="sub">
+                        <img class="box-icon" src="./img/box-icon.svg" alt="">
+                        <h5 class="card-title">
+                        Paquetes Medianos</h5>    
+                        </div>
+                        <p class="card-text">Entregas que requieren esfuerzo</p>
+                        <a href="#contacto" class="btn btn-primary btn-card">Contratar</a>
+                    </div>
+                </div>
 
-        <p>Déjanos tu mensaje</p>
-        <textarea name="" id="" cols="30" rows="10"></textarea>
-    </form>
-   </div>
+                <div class="card card-paquete" style="width: 18rem;">
+                    
+                    <img src="./img/paqgrande.jpg" class="card-img-top" alt="Paquete mediano">
+                    <p class="head-text">Detalles</p>
+                    <div class="card-body">
+                        <div class="sub">
+                        <img class="box-icon" src="./img/box-icon.svg" alt="">
+                        <h5 class="card-title">
+                        Paquetes Grandes</h5>    
+                        </div>
+                        <p class="card-text">Utilizaremos transporte de Porters</p>
+                        <a href="#contacto" class="btn btn-primary btn-card">Contratar</a>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- Formulario de contacto -->
+        <section id="contacto">
+            <h4>¡Contáctanos!</h4>
+            <form action="" class="form-contacto">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre">
+
+                <label for="tel">Número</label>
+                <input type="number" id="tel" name="tel">
+
+                <label for="mail">Correo</label>
+                <input type="email" id="mail" name="mail">
+
+                <label for="mensaje">Déjanos tu mensaje</label>
+                <textarea id="mensaje" name="mensaje" cols="10" rows="3"></textarea>
+            </form>
+        </section>
     </main>
-    <!--footer-->
-   <footer id="footer">
-    <div>
-        <img src="./img/logo footer.webp" alt="">
-        <nav>
-            <ul>
-            <li><a href="">¡Trabaja con nosotros!</a></li>
-            <li><a href="./siguetuenvio.html">Sigue tu envío</a></li>
-            <li><a href="">Información legal</a></li>
-            </ul>
-        </nav>
-    </div>
-   </footer>
 
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="footer-container">
+            <img src="./img/logo footer.webp" alt="Logo Footer" class="footer-logo">
+            <nav class="footer-nav">
+                <ul class="footer-list">
+                    <li><a href="#">Copyright Bridges 2025</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>

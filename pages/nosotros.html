@@ -4,57 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fragile Express</title>
-    
-    <!--css-->
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="../css/style.css">
     
-    <!--fuente-->
+    <!-- Fuente -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div id="header">
-        <a  href="../index.html"><img id="logo" src="../img/logomain.webp" alt=""></a>
-        <h1>Fragile Express</h1>
-
-        <nav>
-            <ul>
-                <li><a id="volver" href="../index.html">Volver a inicio</a></li>
-            </ul>
-            <ul>
-            <li><a href="">Nosotros</a></li>
-            <li><a href="#">|</a></li>
-            <li><a href="./siguetuenvio.html">Sigue tu envío</a></li>
-            </ul>
-        
-        </nav>
-                
-    </div>
+    <!-- Header -->
+    <header id="main-header">
+        <div class="header-container">
+            <a href="../index.html" class="logo-link">
+                <img id="logo" src="../img/logomain.webp" alt="Logo Fragile Express">
+            </a>
+            <h1 class="site-title">Fragile Express</h1>
+            <nav class="main-nav">
+                <a class="nav-link" href="/pages/nosotros.html">Nosotros</a>
+                <a class="nav-link" href="../pages/siguetuenvio.html">Sigue tu envío</a>
+            </nav>
+        </div>
     </header>
+
+    <!-- Main Content -->
     <main>
         <section id="nosotros">
-            <div>
+            <div class="contenido-noso">
                 <h2>Tu lo envías, nosotros entregamos</h2>
-                <img id="imagenporter" src="./img/porters.avif" alt="">
-                <p class="parrafo">Fragile Express es una empresa de entregas especializada en conectar personas y comunidades en un mundo fragmentado. Nuestro equipo de porters se dedica a transportar paquetes esenciales a través de terrenos peligrosos, superando obstáculos y asegurando que cada envío llegue a su destino. Comprometidos con la seguridad, la confianza y la reconstrucción de la sociedad, en Fragile Express creemos que cada entrega es un paso hacia un futuro mejor.</p>
+                <img class="imagenporter" src="../img/porters.avif" alt="Porters Fragile Express">
+                <p class="parrafo">
+                    Fragile Express es una empresa de entregas especializada en conectar personas y comunidades en un mundo fragmentado. Nuestro equipo de porters se dedica a transportar paquetes esenciales a través de terrenos peligrosos, superando obstáculos y asegurando que cada envío llegue a su destino. Comprometidos con la seguridad, la confianza y la reconstrucción de la sociedad, en Fragile Express creemos que cada entrega es un paso hacia un futuro mejor.
+                </p>
             </div>
-            
-    </section>
+        </section>
     </main>
+
+    <!-- Footer -->
     <footer id="footer">
-        <div>
-            <img src="./img/logo footer.webp" alt="">
-            <nav>
-                <ul>
-                <li><a href="">¡Trabaja con nosotros!</a></li>
-                <li><a href="./siguetuenvio.html">Sigue tu envío</a></li>
-                <li><a href="">Información legal</a></li>
+        <div class="footer-container">
+            <img src="../img/logo footer.webp" alt="Logo Footer" class="footer-logo">
+            <nav class="footer-nav">
+                <ul class="footer-list">
+                    <li><a href="#">Copyright Bridges 2025</a></li>
                 </ul>
             </nav>
         </div>
     </footer>
-    </body>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
 </html>

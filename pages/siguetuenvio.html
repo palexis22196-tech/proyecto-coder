@@ -5,51 +5,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fragile Express</title>
     
-    <!--css-->
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    
+    <!-- CSS -->
     <link rel="stylesheet" href="../css/style.css">
     
-    <!--fuente-->
+    <!-- Fuente -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div id="header">
-            <a  href="../index.html"><img id="logo" src="../img/logomain.webp" alt=""></a>
-            <h1>Fragile Express</h1>
-
-            <nav>
-                <ul>
-                    <li><a id="volver" href="../index.html">Volver a inicio</a></li>
-                </ul>
-                <ul>
-                <li><a href="../pages/nosotros.html">Nosotros</a></li>
-                <li><a href="#">|</a></li>
-                <li><a href="">Sigue tu envío</a></li>
-                </ul>
-            
+    <!-- Header -->
+    <header id="main-header">
+        <div class="header-container">
+            <a href="../index.html" class="logo-link">
+                <img id="logo" src="../img/logomain.webp" alt="Logo Fragile Express">
+            </a>
+            <h1 class="site-title">Fragile Express</h1>
+            <nav class="main-nav">
+                <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+                <a class="nav-link" href="/pages/siguetuenvio.html">Sigue tu envío</a>
             </nav>
-                
         </div>
     </header>
+
+    <!-- Main Content -->
     <main id="mapaenvio">
-        <h2 id="envio">Sigue tu envío aqui</h2>
-        <img id="map" src="../img/map.jpg" alt="">
-    </main>
-    <footer id="footer">
         <div>
-            <img src="../img/logo footer.webp" alt="">
-            <nav>
-                <ul>
-                    <li><a href="">¡Trabaja con nosotros!</a></li>
-                    <li><a href="#">Sigue tu envío</a></li>
-                    <li><a href="#">Información legal</a></li>
+            <div class="flex-entrega">
+                <div class="fondo-entrega" >
+                <img class="entregaico" src="/img/entrega.png" alt="">
+                </div>
+            <div>
+                <section id="entregas">
+                <div class="titulocard">
+                    <h2>Sigue tu envío</h2>
+                </div>    
+            </div>
+            </div>
+            
+            <div class="bar">
+            </div>
+        </div> 
+        <img id="map" src="../img/map.jpg" alt="Mapa de seguimiento">
+        <div class="menu-map">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Pedidos</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Peso</th>
+                    
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th colspan="1" scope="row"><img class="icon-map" src="../img/box-icon.svg" alt=""></th>
+                        <th colspan="3" scope="row">Disponible</th>
+                    </tr>
+                    <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                    </tr>
+                    <tr>
+                    <th scope="row">3</th>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>@social</td>
+                    </tr>
+                </tbody>
+                </table>
+            <table style="width:40% ;">
+                <tr>
+                    <th class="columna1">PEDIDOS</th>
+                    <th>NOMBRE</th>
+                    <th>PESO</th>
+                </tr>
+                <tr>
+                    <th class="columna1">Activos</th>
+                </tr>
+                <tr>
+                    <td><img class="icon-map" src="../img/box-icon.svg" alt=""></td>
+                    <td>Entrega de provisiones ligeras</td>
+                    <td>20.0 kg</td>
+                </tr>
+                <tr>
+                    <td><img class="icon-map" src="../img/box-icon.svg" alt=""></td>
+                    <td>Francisco Chang</td>
+                    <td>Mexico</td>
+                </tr>
+            </table>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="footer-container">
+            <img src="../img/logo footer.webp" alt="Logo Footer" class="footer-logo">
+            <nav class="footer-nav">
+                <ul class="footer-list">
+                    <li><a href="#">Copyright Bridges 2025</a></li>
                 </ul>
             </nav>
         </div>
     </footer>
 
-    </body>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
 </html>
