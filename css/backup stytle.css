@@ -100,7 +100,7 @@ p {
     color: var(--color-blanco);
 }
 
-/* ===================== titulo entrega ===================== */
+/* ===================== CARDS DE ENTREGA ===================== */
 .fondo-entrega {
     background-color: var(--color-primario);
     padding: 10px;
@@ -126,8 +126,6 @@ p {
     
     
 }
-
-/*css para opciones de entrega*/
 .fondocard {
     display: flex;
     flex-wrap: wrap;
