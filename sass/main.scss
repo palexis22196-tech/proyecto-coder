@@ -86,7 +86,10 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    .textocuerpo {
+    .textocuerpo:hover{
+        background-color: #2180fc7f;
+    }
+    .textocuerpo {transition: 1.5s;
     width: 60%;
     height: 40%;
     background: linear-gradient(90deg,rgba(64, 150, 235, 0.445) 0%, rgba(0, 66, 102, 0.363) 100%);
@@ -168,15 +171,24 @@ p {
         border: 0;
         width: 33%;
         border: #fff;
-
+            .imagen-card{
+                transition: transform .2s;
+                filter:blur(1.5px)
+            }
+            .imagen-card:hover{
+                
+                filter:blur(0px)
+            }
             .head-text {
             text-align: left;
             text-transform:uppercase;
             background-color: rgba(118, 118, 118, 0.405);
             margin-bottom: 0;
             }
-
-            .card-body {
+            .card-body:hover {
+            transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+            }
+            .card-body {transition: transform .2s;
             display: flex;
             flex-direction: column;
             text-align: center;

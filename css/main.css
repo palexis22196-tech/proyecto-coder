@@ -79,7 +79,11 @@ p {
   justify-content: center;
   align-items: center;
 }
+#cuerpo .textocuerpo:hover {
+  background-color: rgba(33, 128, 252, 0.4980392157);
+}
 #cuerpo .textocuerpo {
+  transition: 1.5s;
   width: 60%;
   height: 40%;
   background: linear-gradient(90deg, rgba(64, 150, 235, 0.445) 0%, rgba(0, 66, 102, 0.363) 100%);
@@ -150,13 +154,24 @@ p {
   width: 33%;
   border: #fff;
 }
+.fondocard .card-paquete .imagen-card {
+  transition: transform 0.2s;
+  filter: blur(1.5px);
+}
+.fondocard .card-paquete .imagen-card:hover {
+  filter: blur(0px);
+}
 .fondocard .card-paquete .head-text {
   text-align: left;
   text-transform: uppercase;
   background-color: rgba(118, 118, 118, 0.405);
   margin-bottom: 0;
 }
+.fondocard .card-paquete .card-body:hover {
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
 .fondocard .card-paquete .card-body {
+  transition: transform 0.2s;
   display: flex;
   flex-direction: column;
   text-align: center;
